@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crear Casa</title>
+<link rel="stylesheet" href="crear_casa.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="back-button" onclick="window.location.href='tus_casas.html'">&#8592;</div>
+  <div class="profile-button" onclick="window.location.href='perfil.php'">Mi perfil</div>
+  <h1>Crear Casa</h1>
+</div>
+
+<form class="form-container" method="post" action="crear_casa.php">
+  <div class="avatar">
+    <img src="imagenes/icono.png" alt="Icono">
+  </div>
+  <input type="text" id="nombreCasa" name="nombreCasa" placeholder="Nombre de la casa" required>
+  <button type="submit">Crear Casa</button>
+</form>
+
+<script src="crear_casas.js"></script>
+
+</body>
+</html>

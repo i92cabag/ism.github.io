@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zonas de la Casa</title>
+    <link rel="stylesheet" href="tus_zonas.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="back-button" onclick="window.location.href='tus_casas.html'">&#8592;</div>
+    <div class="profile-button" onclick="window.location.href='perfil.php'">Mi perfil</div>
+    <h1 id="nombreCasa">Zonas de la Casa</h1>
+</div>
+
+<div class="titulo-zonas">
+    Tus zonas
+</div>
+
+<div class="zonas-container" id="zonasContainer"></div>
+
+<button class="add-button" onclick="location.href='crear_zona.html'">+</button>
+<script>var casaId = sessionStorage.getItem('casaIdActual');</script>
+<button class="editar-casa" onclick="editarCasa(casaId)">Editar casa</button>
+
+<script src="tus_zonas.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,91 @@
+body { 
+    font-family: Arial, sans-serif; 
+}
+
+.header h1 {
+  text-transform: uppercase;
+  font-size: 23px;
+}
+
+.header {
+    position: relative;
+    background-color: #a9aaff;
+    color: white;
+    padding: 1em;
+    text-align: center;
+  }
+
+.casas-container { 
+    font-size: 18px;
+    width: 80%;
+    margin: 10px auto;
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+    gap: 10px; 
+    padding: 10px; 
+}
+
+.house { 
+    cursor: pointer;
+    background: #a9aaff; 
+    color: white; 
+    padding: 20px; 
+    text-align: center; 
+    border-radius: 5px; 
+    box-shadow: 0 4px #999;
+    transition: all 0.3s;
+}
+
+.house:hover {
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.house img {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.add-button { 
+  cursor: pointer;
+  position: fixed; 
+  bottom: 20px; 
+  right: 20px; 
+  background: #395d8d; 
+  color: white; 
+  border: none; 
+  border-radius: 50%; 
+  width: 50px; 
+  height: 50px; 
+  box-shadow: 0 4px #999;
+  transition: all 0.3s;
+}
+
+.add-button:hover {
+  box-shadow: 0 2px #666;
+  transform: translateY(2px);
+}
+
+.profile-button {
+  position: absolute;
+  right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 13px;
+  color: white;
+  background-color: #395d8d;
+  padding: 8px 15px;
+  border-radius: 4px;
+  text-align: center;
+  box-shadow: 0 4px #999;
+  transition: all 0.3s;
+}
+
+.profile-button:hover {
+  box-shadow: 0 2px #666;
+  transform: translateY(-45%);
+}
+
+  

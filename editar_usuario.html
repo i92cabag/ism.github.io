@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editar Perfil</title>
+  <link rel="stylesheet" href="registrarse.css">
+</head>
+
+<body>
+  <form method="post" action="editar_usuario.php" id="editProfileForm" enctype="multipart/form-data">
+
+    <div class="form-header">
+        <h2>Editar mi Perfil</h2>
+    </div>
+
+    <label for="nombre">Nuevo Nombre:</label>
+    <input type="text" id="nombre" name="nombre" required>
+
+    <label for="correo">Nuevo Correo Electrónico:</label>
+    <input type="email" id="correo" name="correo" required>
+
+    <label for="foto">Cambiar Foto de Perfil:</label>
+    <input type="file" id="foto" name="foto" accept="image/*">
+
+    <img src="#" id="preview" alt="Preview" style="display: none; max-width: 100px; max-height: 100px;">
+
+    <button type="submit">Editar Perfil</button>
+  </form>
+
+  <script src="registrarse.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Tareas de la Zona</title>
+<link rel="stylesheet" href="tus_tareas.css">
+</head>
+<body>
+
+<div class="header">
+    <div class="back-button" onclick="window.location.href='tus_zonas.html'">&#8592;</div>
+    <div class="profile-button" onclick="window.location.href='perfil.php'">Mi perfil</div>
+    <h1 id="nombreZona">Tareas de la zona</h1>
+</div>
+
+<div class="titulo-tareas">
+    Tus tareas
+</div>
+
+<div class="tareas-container" id="tareasContainer"></div>
+
+<button class="add-button" onclick="location.href='crear_tarea.html'">+</button>
+<script>var salaId = sessionStorage.getItem('salaIdActual');</script>
+<button class="editar-zona" onclick="editarZona(salaId)">Editar zona</button>
+
+<script src="tus_tareas.js"></script>
+
+</body>
+</html>

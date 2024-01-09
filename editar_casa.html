@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar Casa</title>
+<link rel="stylesheet" href="editar_casa.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="back-button" onclick="window.location.href='tus_zonas.html'">&#8592;</div>
+  <div class="profile-button" onclick="window.location.href='perfil.php'">Mi perfil</div>
+  <h1>Editar Casa</h1>
+</div>
+
+<div class="form-container">
+  <div class="avatar">
+    <img src="imagenes/icono.png" alt="Icono">
+  </div>
+  <input type="text" id="nuevoNombreCasa" placeholder="Nuevo nombre de la Casa" />
+  <p>Para añadir nuevos participantes a la casa, introduzca su correo electrónico.</p>
+  <input type="text" id="correoUsuario" placeholder="Correo del participante nuevo" />
+  <button type=submit id="editarCasa">Editar Casa</button>
+  <button type=button id="eliminarCasa">Eliminar Casa</button>
+</div>
+
+<script src="editar_casa.js"></script>
+
+</body>
+</html>

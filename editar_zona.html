@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Editar Casa</title>
+<link rel="stylesheet" href="editar_zona.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="back-button" onclick="window.location.href='tus_tareas.html'">&#8592;</div>
+  <div class="profile-button" onclick="window.location.href='perfil.php'">Mi perfil</div>
+  <h1>Editar Zona</h1>
+</div>
+
+<div class="form-container">
+  <div class="avatar">
+    <img src="imagenes/icono.png" alt="Icono">
+  </div>
+  <input type="text" id="nuevoNombreSala" placeholder="Nuevo nombre de la Zona" />
+  <button type=submit id="editarZona">Renombrar</button>
+  <button type=button id="eliminarZona">Eliminar Zona</button>
+</div>
+
+<script src="editar_zona.js"></script>
+
+</body>
+</html>

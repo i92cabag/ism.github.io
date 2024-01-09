@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Crear Casa</title>
+  <link rel="stylesheet" href="crear_zona.css">
+</head>
+<body>
+
+<div class="header">
+  <div class="back-button" onclick="window.location.href='tus_zonas.html'">&#8592;</div>
+  <div class="profile-button" onclick="window.location.href='perfil.php'">Mi perfil</div>
+  <h1>Crear Zona</h1>
+</div>
+
+<div class="form-container">
+  <div class="avatar">
+    <img src="imagenes/icono.png" alt="Icono">
+  </div>
+
+  <input type="text" id="nombreZona" name="nombreZona" placeholder="Nombre de la Zona" required>
+
+  <p>Seleccione el tipo de zona que desea crear:</p>
+  
+  <select id="tipoZona" name="tipoZona" onchange="seleccionarTipoZona(this)">
+    <option value="" disabled selected>Seleccionar opción</option>
+    <option value="salon">Salón</option>
+    <option value="bano">Baño</option>
+    <option value="dormitorio">Dormitorio</option>
+    <option value="cocina">Cocina</option>
+    <option value="garaje">Garaje</option>
+</select>
+
+  <button onclick="crearZona()">Crear Zona</button>
+</div>
+
+<script src="crear_zona.js"></script>
+
+</body>
+</html>
